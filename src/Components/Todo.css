@@ -1,0 +1,93 @@
+.Todo {
+    position: relative;
+    border-radius: 8px;
+    background-color: #292B2D;
+    color: white;
+    width:250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+.Task{
+    margin: 0px 8px 0px 8px;
+    padding: 0;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.Task h2 {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: start;
+}
+
+.Task p {
+    margin-top: 1rem;
+    padding-left: 12px;
+    max-width: 300px;
+    word-wrap: break-word;
+
+}
+
+button{
+    padding: 0.7rem 0.4rem;
+    background-color: #fff;
+    color: black;
+    border-radius: 32px;
+}
+
+.delete {
+    background-color: #292B2D;
+    color: #fff;
+    position: absolute;
+    padding: 0.3rem 0.4rem;
+    border-radius: 8px;
+    border: #292B2D;
+    top: 2px;
+    right: 54px;
+}
+
+.edit-undo {
+    background-color: #292B2D;
+    color: #fff;
+    position: absolute;
+    padding: 0.3rem 0.4rem;
+    border-radius: 8px;
+    border: #292B2D;
+    top: 2px;
+    right: 2px;
+}
+
+.rectify {
+    border-style: hidden;
+    color: #292B2D;
+    font-weight: bold;
+    
+}
+
+.editform {
+    background-color: #fff;
+    padding: 2px;
+    gap: 0.5rem;
+    border-radius: 4px;
+}
+
+.editForm {
+    background-color: #fff;
+    border-style: hidden;
+}
+
+.editForm:focus{   
+    outline: none;
+
+}
+
