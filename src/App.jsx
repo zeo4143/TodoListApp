@@ -37,7 +37,7 @@ const reducer = (todos, action) => {
 
 export default function App() {
 
-  const [todos, dispatch] = useReducer(reducer,[])
+  const [todos, dispatch] = useReducer(reducer,initialState)
   
   useEffect(()=> {
     localStorage.setItem('todos', JSON.stringify(todos))
