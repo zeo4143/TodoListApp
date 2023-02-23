@@ -1,8 +1,11 @@
-import React, { useReducer } from "react";
+import React, { useEffect, useReducer } from "react";
 import ToDoInputForm from "./Components/TodoInputForm";
 import Todo from "./Components/Todo"
 import "./App.css"
 
+
+
+const initialState = localStorage.getItem('todos') == null ? [] : JSON.parse(localStorage.getItem('todos'))
 const reducer = (todos, action) => {
 
   if(action.type === "ADD_TODO") {
@@ -35,6 +38,12 @@ const reducer = (todos, action) => {
 export default function App() {
 
   const [todos, dispatch] = useReducer(reducer,[])
+  
+  useEffect(()=> {
+    localStorage.setItem('todos', JSON.stringify(todos))
+
+  }, [todos])
+  
   
   function handleDeleteAll(e) {
     e.preventDefault()
